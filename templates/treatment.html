@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+
+<style type='text/css'>
+    body {
+        background-image: url(static/pn.png);
+        background-position: center;
+        background-size: cover;
+        font-family: sans-serif;
+        margin-top: 40px;
+
+    }
+
+    .regform {
+        width: 800px;
+        background-color: rgb(0, 0, 0, 0.7);
+        margin: auto;
+        color: #FFFFFF;
+        padding: 10px 0px 10px 0px;
+        text-align: center;
+        border-radius: 15px 15px 0px 0px;
+
+    }
+
+    .main-form {
+        width: 800px;
+        margin: auto;
+        background-color: rgb(0, 0, 0, 0.5);
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 20px;
+        color: #FFFFFF;
+    }
+
+    .form-group {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+</style>
+
+
+<head>
+    <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+    href=
+  "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="static/css/main.css" rel="stylesheet">
+     
+  <link rel="stylesheet"
+  href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+ 
+    <title>Breast Cancer Prediction</title>
+    <link rel="icon" href="static/media/pink-ribbon-logo-png-transparent-719x899.ico" type="image/ico">
+</head>
+
+<body>
+    <header id="header" class="header align-items-center fixed-top">
+        <div class="container-fluid d-flex align-items-center justify-content-between">
+    
+          <a href="/" class="logo align-items-center d-flex  me-auto me-lg-0">
+
+            <i class="fa fa-user-md"></i>
+            <h1>Breast Cancer Prediction!</h1>
+          </a>
+    <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/symptoms">Symptoms</a></li>
+          
+          <li><a href="/services" class="active">Prediction</a></li>
+          <li><a href="/faq">FAQ</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+    </div>
+    <div class="mainclass">
+    
+
+    <div class='regform mt-3'>
+        <h1>Breast Cancer Prediction !</h1>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <form action='resultp' class='main-form needs-validation' method="POST" enctype="multipart/form-data">
+        <div class="row">
+            <div class="col">
+                <div class='form-group'>
+                    <label for="firstname">Name</label>
+                    <input type="text" name="firstname" id="firstname" class="form-control" required='True'>
+                </div>
+            </div>
+            
+
+
+
+        <div class='form-group'>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" class="form-control" required='True'>
+        </div>
+
+
+
+
+
+        <div class='form-group'>
+            <label for="inputGroupFile02">Upload your Chest Scan </label>
+            <input type="file" class="form-control" id="file" name='file'>
+        </div>
+
+
+        <div class='text-center'>
+            <button type='submit' class='btn btn-outline-success' style='width:700px;margin-top: 30px;'> Submit
+            </button>
+        </div>
+
+
+
+    </form>
+
+
+</body>
+
+</html>
